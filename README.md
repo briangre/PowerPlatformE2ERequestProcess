@@ -116,7 +116,9 @@ Create a request process that allows a user to submit a Power Platform app reque
 
 ### Key design decisions to confirm
 
-- Whether environments are always newly created or can be selected from a pre-provisioned pool.
-- Required naming conventions for environments, apps, solutions, and pipelines.
-- Required approval levels for high-risk or high-sensitivity requests.
-- Licensing, capacity, and admin connector prerequisites for provisioning automation.
+| Decision | Timing |
+| --- | --- |
+| Whether environments are always newly created or can be selected from a pre-provisioned pool | Required before Phase 4 |
+| Required naming conventions for environments, apps, solutions, and pipelines | Required before Phase 1 |
+| Required approval levels for high-risk or high-sensitivity requests | Required before Phase 3 |
+| Licensing, capacity, and admin connector prerequisites for provisioning automation | Required before Phase 4 |
