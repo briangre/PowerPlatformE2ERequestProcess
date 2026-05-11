@@ -49,7 +49,7 @@ Create a request process that allows a user to submit a Power Platform app reque
      - Updates request status to `Approved`.
      - Initiates environment provisioning.
 3. **Environment provisioning flow**
-   - Creates or assigns Dev/Test/Prod environments according to the approved request.
+   - Creates or assigns Dev/Test/Prod environments based on approved request criteria such as data classification, department/team ownership, region, and naming standards.
    - Applies required settings and security.
    - Adds the requestor as **Environment Maker** in the Dev environment.
    - Writes Environment Assignment records back to Dataverse.
@@ -118,7 +118,7 @@ Create a request process that allows a user to submit a Power Platform app reque
 
 | Decision | Timing |
 | --- | --- |
-| Whether environments are always newly created or can be selected from a pre-provisioned pool | Required before Phase 4 |
+| Whether environments are always newly created or can be selected from a pre-provisioned pool | Required before Phase 4; affects both provisioning automation and environment flow logic |
 | Required naming conventions for environments, apps, solutions, and pipelines | Required before Phase 1 |
 | Required approval levels for high-risk or high-sensitivity requests | Required before Phase 3 |
 | Licensing, capacity, and admin connector prerequisites for provisioning automation | Required before Phase 4 |
